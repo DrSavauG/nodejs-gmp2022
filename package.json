@@ -7,7 +7,9 @@
     "task1": "nodemon src/task-1.1/index.ts",
     "task2": "nodemon src/task-1.2/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint src --ext .ts"
+    "eslint": "eslint src --ext .ts",
+    "b1": "babel src/task-1.1/index.ts --out-file babel/task-1.1/index.js",
+    "b2": "babel src/task-1.2/index.ts --out-file babel/task-1.2/index.js"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,9 @@
     "ts-node": "^10.7.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "eslint": "^7.32.0",
